@@ -1,13 +1,14 @@
 const repeatString = function(txt, x) {
     let resultString = '';
 
+    if (x<0) {
+        resultString = 'ERROR';
+    };
+
     for (let i=0; i < x; i++) {
-        if (x<0) {
-            resultString = 'ERROR';
-            break;
-        }
+
         resultString += txt;
-    }
+    };
 
     return resultString;
 };
